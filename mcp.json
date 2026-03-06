@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "serper-search": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "serper-search-scrape-mcp-server"
+      ],
+      "env": {
+        "SERPER_API_KEY": "b55fb908026e3584660c73075cc8520eeec408b1"
+      }
+    },
+    "playwright": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}
