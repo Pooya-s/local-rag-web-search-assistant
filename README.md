@@ -1,7 +1,7 @@
 # Autonomous Web-Enabled Market Research Assistant
 
 **Local RAG Chatbot with Real-Time Web Search**  
-Built in 3 days using LM Studio | February 2026
+Built in 3 days using LM Studio | February 2026- Screenshots added in March 2026
 
 ### Overview
 Engineered a completely private, offline-first AI research assistant that can autonomously search the web and extract targeted data from complex websites — without any paid APIs or rate limits.
