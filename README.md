@@ -27,7 +27,7 @@ Engineered a completely private, offline-first AI research assistant that can au
 5. Start chatting — the assistant will automatically search and synthesize live data
 
 ### System prompts for the Models
-We need to instruct these models to work optimally with the tools and ot be stuck in infinite loops and repeat null requests, we also need the model to work with the limited resources we have, so we write the system prompt as a sequential roadmap.
+We need to instruct these models to work optimally with the tools not to be stuck in infinite loops and repeat null requests, we also need the model to work with the limited resources we have, so we write the system prompt as a sequential roadmap.
 Below's the prompt I used, that worked just fine with the GPT-OSS 20b : 
 
 "You are an autonomous web automation and research agent. You have access to a headless browser via the Playwright MCP tool. Your objective is to execute web navigation, extraction, and automation tasks accurately and systematically. 
