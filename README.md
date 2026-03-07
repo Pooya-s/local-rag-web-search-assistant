@@ -46,6 +46,8 @@ Created a high-speed research pipeline that can be used for real-time market ana
 ### Screenshots
 ![Chat Interface](screenshots/01-chat-interface.png)
 ![Web Search in Action](screenshots/02-web-search-in-action.png)
+![FinalResults](screenshots/FinalResult.png)
+
 
 ### Technologies
 LM Studio • Qwen/Mistral 14B and GPT-OSS 20B • Model Context Protocol (MCP) • Serper • Playwright • RAG
