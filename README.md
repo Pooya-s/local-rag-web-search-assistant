@@ -48,6 +48,6 @@ Created a high-speed research pipeline that can be used for real-time market ana
 ![Web Search in Action](screenshots/02-web-search-in-action.png)
 
 ### Technologies
-LM Studio • Qwen/Mistral 14B • Model Context Protocol (MCP) • Serper • Playwright • RAG
+LM Studio • Qwen/Mistral 14B and GPT-OSS 20B • Model Context Protocol (MCP) • Serper • Playwright • RAG
 
 Built as a personal experiment to explore autonomous AI agents and real-time data pipelines.
