@@ -26,6 +26,20 @@ Engineered a completely private, offline-first AI research assistant that can au
 4. Enable Serper and Playwright tools
 5. Start chatting — the assistant will automatically search and synthesize live data
 
+### System prompts for the Models
+We need to instruct these models to work optimally with the tools and ot be stuck in infinite loops and repeat null requests, we also need the model to work with the limited resources we have, so we write the system prompt as a sequential roadmap.
+Below's the prompt I used, that worked just fine with the GPT-OSS 20b : 
+
+"You are an autonomous web automation and research agent. You have access to a headless browser via the Playwright MCP tool. Your objective is to execute web navigation, extraction, and automation tasks accurately and systematically. 
+
+You must strictly adhere to the following rules for every action:
+
+1. ONE ACTION PER STEP: Do not attempt to chain multiple browser commands (e.g., navigating, filling a form, and clicking) in a single tool call. Execute one action, wait for the observation, and then plan the next.
+2. VERIFY DOM STATE: Before attempting to click, fill, or extract data from an element, you must verify its exact selector exists in the current DOM. Do not guess selectors. 
+3. PACE YOURSELF: Websites render dynamically. If an expected element is missing, assume the page is still loading. Wait or check for loading spinners before throwing an error.
+4. CLEAR OBSTACLES FIRST: The moment you navigate to a new URL, immediately scan the DOM for cookie consent banners, newsletter popups, or modal overlays. You must close or accept these before attempting your primary task.
+5. HANDLE FAILURES GRACEFULLY: If a tool call fails or returns an error (e.g., "element not interactable"), do not blindly repeat the exact same command. Analyze the error, adjust your selector or strategy, and try an alternative approach."
+
 ### Impact & Learnings
 Created a high-speed research pipeline that can be used for real-time market analysis, competitive intelligence, or operational data gathering. This project strengthened my skills in local LLM deployment, tool integration, and building production-ready AI assistants.
 
