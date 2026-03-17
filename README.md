@@ -51,5 +51,8 @@ Created a high-speed research pipeline that can be used for real-time market ana
 
 ### Technologies
 LM Studio • Qwen/Mistral 14B and GPT-OSS 20B • Model Context Protocol (MCP) • Serper • Playwright • RAG
+Model Scale: 20B-parameter model (GPT-OSS 20B) operating within a 70,000-token context window.
+Hardware Optimization: Zero-cost local inference achieved by offloading 17 model layers to the GPU, maintaining an 11 GB VRAM footprint.
+Latency: Executed automated reasoning cycles and tool-calling loops in sub-15-second intervals.
 
 Built as a personal experiment to explore autonomous AI agents and real-time data pipelines.
