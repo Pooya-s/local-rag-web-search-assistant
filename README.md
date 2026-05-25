@@ -4,7 +4,7 @@
 Engineered a completely private, offline-first AI research agent capable of autonomously searching the web and extracting targeted market data from complex websites. This system eliminates paid API dependencies while dynamically injecting live web context to reduce LLM temporal hallucinations.
 
 ## Architecture & Hardware Metrics
-* **Model Scale:** Utilizes a locally hosted 20B-parameter model (GPT-OSS 20B) operating within a 70,000-token context window.
+* **Model Scale:** Utilizes a locally hosted 20B-parameter model (GPT-OSS 20B) operating within a 30,000-token context window.
 * **Hardware Optimization:** Zero-cost local inference achieved by offloading 17 model layers to the GPU, maintaining an 11 GB VRAM footprint.
 * **Execution Latency:** Achieved sub-15-second automated reasoning and tool-calling cycles for dynamic data extraction.
 * **Tool Integration:** Utilizes the Model Context Protocol (MCP) to seamlessly integrate Playwright (headless browser automation) and Serper (real-time search) directly into the agent's reasoning loop.
