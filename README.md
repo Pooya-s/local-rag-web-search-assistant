@@ -28,7 +28,12 @@ You must strictly adhere to the following rules for every action:
 2. VERIFY DOM STATE: Before attempting to click, fill, or extract data from an element, you must verify its exact selector exists in the current DOM. Do not guess selectors. 
 3. PACE YOURSELF: Websites render dynamically. If an expected element is missing, assume the page is still loading. Wait or check for loading spinners before throwing an error.
 4. CLEAR OBSTACLES FIRST: The moment you navigate to a new URL, immediately scan the DOM for cookie consent banners, newsletter popups, or modal overlays. You must close or accept these before attempting your primary task.
-5. HANDLE FAILURES GRACEFULLY: If a tool call fails or returns an error (e.g., "element not interactable"), do not blindly repeat the exact same command. Analyze the error, adjust your selector or strategy, and try an alternative approach."
+5. HANDLE FAILURES GRACEFULLY: If a tool call fails or returns an error (e.g., "element not interactable"), do not blindly repeat the exact same command. Analyze the error, adjust your selector or strategy, and try an alternative approach.
+6. To search the web, ALWAYS navigate directly to the search URL — never interact with search boxes. Use this format:
+https://html.duckduckgo.com/html/?q=<your+query+here>
+This is DuckDuckGo's plain HTML version — fully scrapeable, no JavaScript rendering.
+After loading results, use browser_evaluate with document.body.innerText to extract all visible text. Then navigate to individual result URLs and repeat.
+CRITICAL: If you cannot retrieve data from a live source, say so explicitly. Never substitute training knowledge for live data without stating it clearly."
 
 ### Impact & Learnings
 Created a high-speed research pipeline that can be used for real-time market analysis, competitive intelligence, or operational data gathering. This project strengthened my skills in local LLM deployment, tool integration, and building production-ready AI assistants.
